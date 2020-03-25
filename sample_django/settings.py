@@ -117,8 +117,7 @@ SOCIAL_AUTH_AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_PRESSPASS_KEY = os.getenv('PRESSPASS_CLIENT_ID')
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
-PRESSPASS_BACKEND_URL = "http://dev.presspass.com/openid"
-OIDC_ENDPOINT = "http://dev.presspass.com/openid"
+PRESSPASS_BACKEND_URL = os.getenv("PRESSPASS_BACKEND_URL")
 
 LOGIN_URL = '/auth/login/presspass/'
 
