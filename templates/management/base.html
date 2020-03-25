@@ -19,17 +19,12 @@
           <li>
             <a class="navbar-link" href="{% url 'admin:index' %}">Admin</a>
           </li>
-          <li>
-            <a class="navbar-link" href="{% url 'management:register' %}"
-              >Register</a
-            >
-          </li>
           {% if user.is_authenticated %}
           <li><a href="{% url 'user_logout' %}">Logout</a></li>
           {% else %}
           <li>
-            <a href="{% url 'social:begin' 'google-oauth2' %}"
-              >Login with Google</a
+            <a class="navbar-link" href="{% url 'management:register' %}"
+              >Register</a
             >
           </li>
 
@@ -38,11 +33,11 @@
               >Login with PressPass</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a class="navbar-link" href="{% url 'management:user_login' %}"
               >Site Login</a
             >
-          </li>
+          </li> -->
           {% endif %}
         </ul>
       </div>

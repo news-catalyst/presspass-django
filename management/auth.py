@@ -7,6 +7,5 @@ class LoginView(TemplateView):
 
     def dispatch(self, request, *args, **kwargs):
         if self.request.session.get("presspass_authenticated", False) == True:
-            # return redirect("management:dashboard")
             return redirect('index')
         return super().dispatch(request, *args, **kwargs)

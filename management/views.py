@@ -59,7 +59,7 @@ def user_login(request):
                 login(request, user)
                 return HttpResponseRedirect(reverse('index'))
             else:
-                return HttpResponse("Your account was inactive.")
+                return HttpResponse("Your account is inactive.")
         else:
             print("Failed login with username: {} and password: {}".format(
                 username, password))
