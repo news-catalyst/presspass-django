@@ -83,7 +83,7 @@ packaging==19.2
 parso==0.3.3
 pexpect==4.6.0
 pickleshare==0.7.5
-Pillow==5.1.0
+Pillow==6.2.0
 pip-tools==4.5.1
 pluggy==0.13.1
 premailer==3.0.0
