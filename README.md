@@ -9,7 +9,7 @@ For now this assumes you have PressPass running locally. These instructions will
 ```
 git clone git@github.com:news-catalyst/presspass-django.git
 cd presspass-django
-pip install -r requirements.txt
+pipenv install
 python manage.py migrate
 ```
 
